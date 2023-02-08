@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-blue: #EFF1FF;
+    --light-pink: #FEEAFA;
+    --light-purple: #CBC0D3;
+    --light-dark-blue: #8E9AAF;
+    --dark-blue: #4A4E69;
+
+    --font-one: font-family: 'Staatliches', cursive;
+    --font-two: font-family: 'Palanquin', sans-serif;
+
+    --ft-size-one: 40px;
+    --ft-size-two: 20px;
+}
