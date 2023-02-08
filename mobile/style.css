@@ -16,8 +16,8 @@
     --font-one: 'Staatliches', cursive;
     --font-two: 'Palanquin', sans-serif;
 
-    --ft-size-one: 40px;
-    --ft-size-two: 20px;
+    --ft-size-one: 2.5rem;
+    --ft-size-two: 1.25rem;
 }
 
 header {
@@ -35,12 +35,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.img-box:hover {
+    transform: scale(1.1);
 }
 
 body {
     background-color: var(--light-blue);
 }
 
+main {
+    height: auto;
+}
 .heading-box {
     background-color: var(--light-purple);
     display: flex;
@@ -52,7 +62,7 @@ body {
 
 h1 {
     font-family: var(--font-one);
-    font-size: (var--ft-size-one);
+    font-size: var(--ft-size-one);
     font-weight: 400;
     line-height: 2rem;
     color: var(--white);
@@ -62,9 +72,9 @@ h1 {
 
 main section p {
     font-family: var(--font-two);
-    font-size: (var--ft-size-two);
+    font-size: var(--ft-size-two);
     font-weight: 400;
-    line-height: 1rem;
+    line-height: 1.1rem;
     color: var(--dark)
 }
 
@@ -82,10 +92,10 @@ main section p {
     padding-top: 14px;
 }
 
-main section span {
+.tag {
     font-family: var(--font-one);
-    font-size: (var--ft-size-two);
-    color: var(--dark)
+    font-size: var(--ft-size-two);
+    color: var(--dark-blue)
 
 }
 
@@ -98,8 +108,26 @@ main section span {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    position: relative;
+    float: right;
+    right: 16px;
+    top: 50px;
 }
 
 .ice-cream-title-box:hover {
     background-color: var(--light-purple);
+}
+
+.ice-cream-cont {
+    display: flex;
+    height: 1642px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 63px 0px 60px 0px;
+}
+
+.cont-controler {
+    width: 325px;
 }
