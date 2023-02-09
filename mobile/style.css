@@ -75,27 +75,27 @@ main section p {
     font-size: var(--ft-size-two);
     font-weight: 400;
     line-height: 1.1rem;
-    color: var(--dark)
+    color: var(--dark);
 }
 
 .text-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 14px;
+    margin-top: 1rem;
 }
 
 .text-box {
     text-align: center;
     width: 22rem;
     height: 7rem;
-    padding-top: 14px;
+    padding-top: 1rem;
 }
 
 .tag {
     font-family: var(--font-one);
     font-size: var(--ft-size-two);
-    color: var(--dark-blue)
+    color: var(--dark-blue);
 
 }
 
@@ -130,4 +130,38 @@ main section p {
 
 .cont-controler {
     width: 325px;
+}
+
+.cont-controler img {
+    animation: topdown 1s;
+    transition-timing-function: ease-out;
+}
+
+.ice-cream-title-box {
+    animation: downtop 2s ease-in;
+
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {    
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
