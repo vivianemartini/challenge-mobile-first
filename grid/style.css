@@ -15,6 +15,7 @@
 
     --font-one: 'Staatliches', cursive;
     --font-two: 'Palanquin', sans-serif;
+    --font-three: 'Open Sans', sans-serif;
 
     --ft-size-one: 2.5rem;
     --ft-size-two: 1.25rem;
@@ -88,7 +89,7 @@ main section p {
 .text-box {
     text-align: center;
     width: 22rem;
-    height: 7rem;
+    height: 12rem;
     padding-top: 1rem;
 }
 
@@ -142,6 +143,10 @@ main section p {
 
 }
 
+footer {
+    display: none;
+}
+
 @keyframes topdown {
     0% {
         opacity: 0;
@@ -163,5 +168,30 @@ main section p {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (min-width: 700px) {
+    :root {
+        --ft-size-one: 3rem;
+        --ft-size-two: 1.5rem;
+    }
+    .page {
+        max-width: 117rem;
+       /*  padding: 0.5rem; */
+    }
+    .heading-box {
+        height: 4.3rem;
+    }
+    footer {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+    footer p {
+        font-family: var(--font-three);
+        font-size: 0.8rem;
+        line-height:  1.7rem;
+        color: var(--dark-blue);
     }
 }

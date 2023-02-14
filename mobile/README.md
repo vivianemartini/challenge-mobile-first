@@ -7,3 +7,9 @@ Nesse desafio, lembre-se de usar:
 - Unidade de medida flexível;
 - Variáveis;
 - Animações simples.
+
+# Preview  📷
+
+<p >
+  <img alt="preview" src="./assets/preview-mobile.png" width="200" height="900"/>
+</p>
