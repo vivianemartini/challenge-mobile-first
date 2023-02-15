@@ -1,72 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Grid</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <div class="page">
+      <header>
         <div class="img-box">
           <img src="./assets/logo_1.svg" alt="Logo da loja de sorvete" />
         </div>
         <div class="heading-box">
           <h1>Space cream</h1>
         </div>
-      </header>
-  
-      <main>
+
         <section class="text-section">
           <div class="text-box">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-              rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet
-              erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent
-              at quam aliquet.
+              rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit
+              amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat.
+              Praesent at quam aliquet, pharetra est in, sagittis lorem.elit.
+              Donec a rhoncus leo. Donec at scelerisque magna.Nullam vitae neque
+              sit amet erat dignissim cursus ac ac lectus. Aliquam erat
+              volutpat. Praesent at quam aliquet, pharetra est in, sagittis
+              lorem.
             </p>
           </div>
         </section>
-  
+      </header>
+
+      <main>
         <div class="ice-cream-cont">
           <div class="cont-controler">
             <div class="ice-cream-title-box">
               <p class="tag">paletas</p>
             </div>
-            <img src="./assets/sorvete1.png" alt="Picolés" />
+            <img class="ice-cream-1" src="./assets/sorvete1.png" alt="Picolés" />
           </div>
-  
+
+          <div class="cont-controler" id="repeat">
+            <div class="ice-cream-title-box">
+              <p class="tag">paletas</p>
+            </div>
+            <img class="ice-cream-1" src="./assets/sorvete1.png" alt="Picolés" />
+          </div>
+
           <div class="cont-controler">
             <div class="ice-cream-title-box">
               <span class="tag">Shakes</span>
             </div>
-            <img src="./assets/sorvete2.png" alt="Shake de frutas" />
+            <img class="shake" src="./assets/sorvete2.png" alt="Shake de frutas" />
           </div>
-  
+
           <div class="cont-controler">
             <div class="ice-cream-title-box">
               <span class="tag">Massas</span>
             </div>
-            <img src="./assets/sorvete3.png" alt="Bola de sorvete" />
+            <img class="ice-cream-2" src="./assets/sorvete3.png" alt="Bola de sorvete" />
           </div>
-  
+
           <div class="cont-controler">
             <div class="ice-cream-title-box">
               <span class="tag">Picolés</span>
             </div>
-            <img src="./assets/sorvete4.png" alt="Picolé" />
-          </div>
+            <img class="picole" src="./assets/sorvete4.png" alt="Picolé" />
+          </div>    
+
+          <div class="cont-controler" id="repeat">
+            <div class="ice-cream-title-box">
+              <span class="tag">Picolés</span>
+            </div>
+            <img class="picole" src="./assets/sorvete4.png" alt="Picolé" />
+          </div>   
         </div>
+        <footer>
+          <p>fale concosco no instagram <strong>@space_cream</strong></p>
+        </footer>
       </main>
-</body>
+    </div>
+  </body>
 </html>
