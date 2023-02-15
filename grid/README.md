@@ -13,5 +13,5 @@ Obs. Na versão Desktop tem um footer e na versão mobile, não.
 # Preview  📷
 
 <p >
-  <img alt="preview" src="" width="200" height="900"/>
+  <img alt="preview" src="./assets/preview-grid.png"/>
 </p>
