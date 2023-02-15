@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,13 +19,15 @@
     --font-one: 'Staatliches', cursive;
     --font-two: 'Palanquin', sans-serif;
     --font-three: 'Open Sans', sans-serif;
+    --font-four:  'Roboto', sans-serif;
 
     --ft-size-one: 2.5rem;
     --ft-size-two: 1.25rem;
+    --ft-size-three: 1.5rem;
 }
 
 header {
-    height: 17.4rem;
+    height: 37.4rem;
     background-color: var(--light-dark-blue);
 
     display: flex;
@@ -71,12 +76,12 @@ h1 {
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-main section p {
+section p {
     font-family: var(--font-two);
     font-size: var(--ft-size-two);
     font-weight: 400;
     line-height: 1.1rem;
-    color: var(--dark);
+    color: var(--white);
 }
 
 .text-section {
@@ -140,11 +145,18 @@ main section p {
 
 .ice-cream-title-box {
     animation: downtop 2s ease-in;
-
 }
 
 footer {
-    display: none;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    font-family: var(--font-three);
+    font-size: 0.8rem;
+    line-height:  1.7rem;
+    color: var(--dark-blue);
 }
 
 @keyframes topdown {
@@ -174,24 +186,94 @@ footer {
 @media (min-width: 700px) {
     :root {
         --ft-size-one: 3rem;
-        --ft-size-two: 1.5rem;
     }
     .page {
-        max-width: 117rem;
+        height: 720px;
+        width: 100vw;
+        display: flex;
        /*  padding: 0.5rem; */
+    }
+    header {
+        width: 377px;
+        justify-content: flex-start;
+        height: 100vh;
     }
     .heading-box {
         height: 4.3rem;
     }
-    footer {
-        display: block;
-        text-align: center;
-        padding: 20px;
+    .img-box {
+        padding-top: 32px;
     }
-    footer p {
-        font-family: var(--font-three);
-        font-size: 0.8rem;
-        line-height:  1.7rem;
-        color: var(--dark-blue);
+    .text-box {
+        padding-top: 0rem;
+    }
+    section p {
+        color: var(--white);
+        font-size: 1rem;
+        width: 275px;
+        margin-left: 31px;
+        line-height: 20px;
+        font-family: var(--font-four);
+    }
+    main {
+        height: 720px;
+        padding: 31px 30px;
+        margin-left: 30px;
+        width: 905px;
+        display: block;
+    }
+    .ice-cream-cont {
+  /*       display: grid;
+        grid-template-columns: 30% 30% 30%; */
+        display: grid;
+        grid-template-areas: 
+        'A B C'
+        'D B E'
+        'D F E';
+        border: 1px solid red;
+        height: 593px;
+        align-items: start;
+        padding: 2px 50px;        
+    }
+    .ice-cream-cont div:nth-child(1) {
+        grid-area: A;
+       }
+    
+       .ice-cream-cont div:nth-child(2) {
+        display: flex;
+        grid-area: C;
+       }
+      
+       .ice-cream-cont div:nth-child(3) {
+        grid-area: B;
+       }
+      
+       .ice-cream-cont div:nth-child(4) {
+        grid-area: F;
+       }
+      
+       .ice-cream-cont div:nth-child(5) {
+        grid-area: D;
+       }
+    
+       .ice-cream-cont div:nth-child(6) {
+        display: flex;
+        grid-area: E;
+       }
+    .ice-cream-1 {
+        width: 220px;
+    }
+    .shake {
+        width: 220px;
+    }
+    .ice-cream-2 {
+        width: 220px;
+    }
+    .picole {
+        width: 220px;
+        height: 350px;
+    }
+    .ice-cream-title-box  {
+        display: none;
     }
 }
