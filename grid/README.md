@@ -1,6 +1,6 @@
 # Grid
 
-Create the Desktop version of Space Cream Poject 🍨
+Create the Desktop version of Space Cream Project 🍨
 
 This challege should have:
 
